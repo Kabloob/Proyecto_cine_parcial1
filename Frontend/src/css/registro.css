@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Cambiar a space-between para separar logo y nav */
+    align-items: center;
+    color: white;
+    padding: 0.5rem 20px; /* Añadir un poco de padding horizontal */
+}
+
+#logo {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+#header-img {
+    width: 150px;
+    height: auto; 
+}
+
+nav {
+    display: flex; 
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+}
+
+nav li {
+    margin: 0 15px; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+}
+
+nav a:hover {
+    color: #ffcc00; 
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px; /* Cambiar para que sea un ancho más manejable */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+h2 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Añadir un margen inferior */
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+input {
+    width: calc(100% - 20px); /* Hacerlo más flexible */
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #abe305;
+    outline: none;
+}
+
+#registro-button {
+    width: 100%; /* Cambiar a 100% para ocupar todo el espacio */
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #c4ff02; /* Cambiar a border para que sea visible */
+    background: none;
+    margin-top: 20px; /* Añadir un margen superior */
+}
+
+#registro-button:hover {
+    background: #c4ff02;
+}

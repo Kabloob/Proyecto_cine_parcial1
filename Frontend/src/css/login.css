@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evitar scroll por video de fondo */
+}
+
+/* Video de fondo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between; /* Cambiado para usar espacio entre */
+    align-items: center;
+    background-color: transparent; /* Cambiar a 'transparent' */
+    color: white;
+    padding: 0.5rem 20px; /* Espaciado horizontal */
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    flex-grow: 1; /* Permite que la barra de navegación ocupe el espacio disponible */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1; /* Permite que el menú ocupe el espacio disponible */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Botón de registro */
+#registro {
+    padding: 0.5rem 1rem;
+    background: #abe305;
+    color: rgb(4, 4, 4);
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background 0.3s; /* Añadir transición */
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+}
+
+#registro:hover {
+    background: #c4ff02;
+}
+
+/* Estilos para el logo en el header */
+#header-img {
+    width: 150px;
+    height: auto;
+}
+
+/* Contenedor principal */
+div {
+    padding: 20px;
+    max-width: 600px; /* Aumentar el ancho máximo */
+    margin: 50px auto; /* Centrar el contenedor */
+}
+
+/* Títulos */
+h2 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos de los inputs */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Cambiado a 100% para que se ajuste al contenedor */
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #abe305;
+    outline: none;
+}
+
+/* Estilos del botón de login */
+#login-button {
+    width: 100%; /* Cambiado a 100% para que se ajuste al contenedor */
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #c4ff02; /* Cambiar fondo */
+    border: none; /* Sin borde */
+}
+
+#login-button:hover {
+    background: #97c803; /* Color más oscuro en hover */
+}
+
+/* Estilos del enlace de recuperación */
+#recuperar {
+    text-align: left;
+    margin-top: 10px;
+}
+
+#recuperar a {
+    color: #ffffff;
+    font-style: italic;
+    text-decoration: underline; /* Añadir subrayado */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    /* Ajustes para pantallas pequeñas */
+    div {
+        padding: 10px;
+        max-width: 90%; /* Ancho máximo en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Disminuir tamaño de fuente */
+    }
+
+    #login-button,
+    #registro {
+        width: 100%; /* Botones ocupan todo el ancho */
+    }
+}
